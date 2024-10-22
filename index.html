@@ -12,12 +12,17 @@
     <h1>Tipos de Inputs</h1>
     <p>
         <label for="nom">Nombre:</label>
-        <input type="text" maxlength="6" name="nombre" id="nom">
+        <input type="text" maxlength="6" placeholder="Escriba su nombre completo" required name="nombre" id="nom">
     </p>
+   
     <p>
-        <label for="contrase">Apellidos:</label>
-        <input type="password" maxlength="6" name="contrase" id="contraseña">
+        <label for="pob">Polacion:</label>
+        <input type="text" disabled autofocus value="Alcazar de San Juan" maxlength="50">
     </p>
+    <label for="contrase">Contraseña:</label>
+    <input type="password" name="contrase" minlength="4" id="contrase" maxlength="6"
+    >
+</p>
     <p>
       <label for="hombre">Hombre:</label>  
         <input type="radio" value="H" checked id="hombre" name="genero">
@@ -26,7 +31,7 @@
     </p>
     <p>
        <label for="fumador">Fumador</label> 
-       <input type="checkbox" id="fumador" name="fuma">
+       <input type="checkbox" checked id="fumador" name="fuma">
     </p>
        </fieldset>
     <p>
